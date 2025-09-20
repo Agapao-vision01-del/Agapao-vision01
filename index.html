@@ -1,248 +1,55 @@
-
-
 ```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Agapao Vision RDC - Protection des Enfants et Paix</title>
-  <style>
-    /* Reset basique */
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      background: #fff;
-      color: #222;
-      line-height: 1.6;
-      font-size: 18px;
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    header img {
-      width: 120px;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      font-weight: 700;
-      font-size: 2.2rem;
-      color: #005a9c;
-      letter-spacing: 1px;
-    }
-    header p {
-      font-size: 1rem;
-      color: #
-      article div.content {
-      padding: 15px 20px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      color: #222;
-      font-size: 0.95rem;
-      line-height: 1.4;
-      text-align: justify;
-    }
-    footer {
-      text-align: center;
-      color: #555;
-      font-size: 0.9rem;
-      border-top: 1px solid #ccc;
-      padding: 1rem 0;
-      margin-top: 3rem;
-    }
-    @media (max-width: 500px) {
-      body {
-        font-size: 16px;
-        padding: 10px;
-      }
-      header h1 {
-        font-size: 1.7rem;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agapao Vision RDC</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <img src="images/logo.png" alt="Logo Agapao Vision RDC" class="logo">
+    <h1>Agapao Vision RDC</h1>
+    <p>Au cœur de la paix et de la protection des enfants</p>
+  </header>
 
-<header>
-  <img src="logo.png" alt="Logo Agapao Vision RDC" />
-  <h1>Agapao Vision RDC</h1>
-  <p>Au cœur de la paix et de la protection des enfants</p>
-</header>
+  <main>
+    <h2>Nos Actions Récentes</h2>
 
-<section class="intro">
-  <p>
-    Agapao Vision RDC est une organisation engagée dans la protection des droits des enfants et la promotion de la paix en République Démocratique du Congo.  
-  </p>
-</section>
+    <section class="action">
+      <img src="images/photo1.jpg" alt="Conférence du 13 septembre">
+      <div>
+        <h3>La conférence principale s’est tenue le 13 septembre</h3>
+        <p>50 participants, dont des leaders religieux de Ngangi 3. Cette rencontre dirigée par Don Prémicés Mufungizi a permis de créer une plateforme d’échange pour protéger les enfants et promouvoir leurs droits.</p>
+      </div>
+    </section>
+<section class="action reverse">
+      <div>
+        <h3>Du 12 au 14 septembre</h3>
+        <p>Les bénévoles ont réuni les leaders religieux de Ngangi 3 pour lutter contre les mariages d’enfants et grossesses précoces. Conférence à l’EP Nyabushongo avec enseignants, élèves et leaders communautaires.</p>
+      </div>
+      <img src="images/photo2.jpg" alt="Sensibilisation dans les églises">
+    </section>
 
-<h2 class="section-title">Nos Actions Récentes</h2>
+    <section class="action">
+      <img src="images/photo3.jpg" alt="Week-end interreligieux">
+      <div>
+        <h3>Week-end Interreligieux</h3>
+        <p>Agapao Vision RDC, avec Child Marriage Free World, a sensibilisé sur le mariage d’enfants, rappelant que toutes les doctrines religieuses s’y opposent.</p>
+      </div>
+    </section>
+  </main>
 
-<div class="gallery">
-
-  <article>
-    margin-top: 0.3rem;
-      font-style: italic;
-    }
-    nav {
-      margin: 2rem 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #005a9c;
-      font-weight: 600;
-      border-bottom: 2px solid transparent;
-      padding-bottom: 5px;
-      transition: border-color 0.3s ease;
-    }
-    nav a:hover {
-      border-color: #005a9c;
-    }
-    section.intro {
-      margin-bottom: 3rem;
-    }
-    section.intro p {
-      max-width: 800px;
-      margin: auto;
-      font-size: 1.1rem;
-      color: #333;
-      text-align: justify;
-    }
-    h2.section-title {
-      color: #004080;
-      border-bottom: 3px solid #005a9c;
-      padding-bottom: 8px;
-      margin-bottom: 1rem;
-      text-align: center;
-      font-size: 1.8rem;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-      gap: 20px;
-      margin-bottom: 3rem;
-    }
-    article {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 0 8px rgb(0 0 0 / 0.05);
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-    }
-    article img {
-      width: 100%;
-      object-fit: cover;
-      max-height: 180px;
-    }
-    margin-top: 0.3rem;
-      font-style: italic;
-    }
-    nav {
-      margin: 2rem 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #005a9c;
-      font-weight: 600;
-      border-bottom: 2px solid transparent;
-      padding-bottom: 5px;
-      transition: border-color 0.3s ease;
-    }
-    nav a:hover {
-      border-color: #005a9c;
-    }
-    section.intro {
-      margin-bottom: 3rem;
-    }
-    section.intro p {
-      max-width: 800px;
-      margin: auto;
-      font-size: 1.1rem;
-      color: #333;
-      text-align: justify;
-    }
-    h2.section-title {
-      color: #004080;
-      border-bottom: 3px solid #005a9c;
-      padding-bottom: 8px;
-      margin-bottom: 1rem;
-      text-align: center;
-      font-size: 1.8rem;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-      gap: 20px;
-      margin-bottom: 3rem;
-    }
-    article {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 0 8px rgb(0 0 0 / 0.05);
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-    }
-    article img {
-      width: 100%;
-      object-fit: cover;
-      max-height: 180px;
-    }
-    <img src="photo.jpg" alt="Conférence des leaders religieux - 13 septembre" />
-    <div class="content">
-      <p>
-        La conférence principale s’est tenue le 13 septembre avec 50 participants, dont des leaders religieux locaux de tout Ngangi 3. Sous la direction de Don Prémices Mufungizi, président de Agapao Vision RDC, cette rencontre a créé une plateforme d’échange pour explorer des solutions concrètes visant à protéger les enfants et promouvoir leurs droits.
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <img src="photo2.jpg" alt="Sensibilisations et conférences - 12 au 14 septembre" />
-    <div class="content">
-      <p>
-        Du 12 au 14 septembre, les bénévoles de Agapao Vision RDC ont réuni des leaders religieux de Ngangi 3 pour mettre fin aux mariages d’enfants et grossesses précoces dans le groupement de Munigi, territoire de Nyiragongo. Plusieurs activités ont été menées, incluant des sensibilisations dans les églises et une conférence dans la grande salle de l’EP Nyabushongo avec la participation des enseignants, élèves, leaders et membres de la communauté.
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <img src="photo3.jpg" alt="Week-end interreligieux mondial pour la protection des enfants" />
-    <div class="content">
-      <p>
-        « Aujourd’hui, notre communauté s’est jointe aux responsables religieux du monde entier pour le tout premier week-end interreligieux mondial visant à mettre fin au mariage des enfants. »  
-        Les enfants sont des dons précieux qui doivent être protégés tout au long de leur enfance.  
-        Le mariage est une institution sacrée réservée aux adultes capables d’assumer leurs responsabilités.  
-        Aucune doctrine religieuse n’approuve le mariage des enfants ; les chefs religieux s’y opposent car cela va à l’encontre des valeurs de dignité et de protection.
-      </p>
-    </div>
-  </article>
-
-</div>
-
-<footer>
-  <p>&copy; 2025 Agapao Vision RDC. Tous droits réservés.</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Agapao Vision RDC - Tous droits réservés</p>
+  </footer>
 </body>
 </html>
 ```
 
 ---
 
- 
+
+
+```
